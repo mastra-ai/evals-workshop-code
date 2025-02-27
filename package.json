@@ -1,0 +1,28 @@
+{
+  "name": "evals-wkshop-00",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run --mode test",
+    "dev": "mastra dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@ai-sdk/openai": "^1.1.14",
+    "@mastra/core": "^0.4.2",
+    "@mastra/evals": "^0.1.5",
+    "dotenv": "^16.4.7",
+    "mastra": "^0.2.6",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.7"
+  }
+}
