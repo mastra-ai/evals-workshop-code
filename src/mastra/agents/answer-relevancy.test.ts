@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { answerRelevancyAgent, answerRelevancyEval } from './answer-relevancy';
 
-describe.skip('Answer Relevancy Tests', () => {
+describe('Answer Relevancy Tests', () => {
     const testCases = [
         {
             query: "How do I reset my TechGadget X200 to factory settings?",
@@ -32,6 +32,6 @@ describe.skip('Answer Relevancy Tests', () => {
 
             // Assert that the relevancy score is above a reasonable threshold
             expect(relevancyScore.score).toBeGreaterThan(0.0);
-        }, 30000);
+        }, 60000);
     });
 });

@@ -31,13 +31,12 @@ const answerRelevancyMetric = new AnswerRelevancyMetric(model, {
     scale: 1,
 });
 
-
 const toneConsistencyMetric = new ToneConsistencyMetric();
 
 export const customerSupportAgent = new Agent({
     instructions: initial_prompt,
     name: "QuantumTech Customer Support Agent",
-    model,
+    model: openai('gpt-4o'),
     evals: {
         customerSupportQualityMetric,
         hallucinationMetric,

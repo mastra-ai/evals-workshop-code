@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { toneConsistencyAgent, toneConsistencyMetric } from './tone';
 
-describe.skip('Tone Consistency Tests', () => {
+describe('Tone Consistency Tests', () => {
     const testCases = [
         {
             query: "What quantum computing services do you offer?",
